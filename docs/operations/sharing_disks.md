@@ -1,6 +1,6 @@
 # Sharing storage between multiple Virtual Machines
 
-Shareable disks allows multiple VMs to share the same underlying storage. In order to use this feature, a special care is required because this could lead to data corruption and the loss of important data. Shareable disk demand either data synchronization at application level or the usage of clustered filesystems. These advanced configurations are out-of-scope of this documentation and use-cases specific.
+Shareable disks allows multiple VMs to share the same underlying storage. In order to use this feature, a special care is required because this could lead to data corruption and the loss of important data. Shareable disks demand either data synchronization at application level or the usage of clustered filesystems. These advanced configurations are out-of-scope of this documentation and use-cases specific.
 
 If the underlying storage is using the storage logical unit number (LUN), it can be directly connected to a VM from the storage area network (SAN).
 The SCSI passthrough allows to directly send requests to the device using the SCSI ioctls. This feature can be used for creating cluster shared volumes orchestrated by SAN-aware applications running inside the VMs.
