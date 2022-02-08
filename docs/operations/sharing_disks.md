@@ -324,5 +324,4 @@ Test awesome shareable disks150+0 records in
 
 ## Scheduling considerations
 
-If you are using a local devices or a RWO PVC, putting the affinity on the VMs that share the storage guarantees they will be scheduled on the same node. In the examples, we put the affinity on the second VM using the label used by the first one. If you are using shared storage with RWX PVCs, then the affinity rule is not necessary as the storage can be attached simoultaneously on multiple nodes.
-
+If you are using local devices or RWO PVCs, putting the affinity on the VMs that share the storage guarantees they will be scheduled on the same node. In the examples, we put the affinity on the second VM using the label used by the first one. If you are using shared storage with RWX PVCs, then the affinity rule is not necessary as the storage can be attached simoultaneously on multiple nodes.
