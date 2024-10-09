@@ -1,4 +1,4 @@
-# Migration update volume strategy and volume migration
+# Update volume strategy and volume migration
 
 Storage migration is possible while the VM is running by using the update volume strategy. Storage migration can be useful in the cases where the users need to change the underlying storage, for example, if the storage class has been deprecated, or there is a new more performant driver available.
 
